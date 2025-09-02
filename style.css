@@ -1,0 +1,75 @@
+body {
+    background: #f5f6fa;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.15);
+}
+
+.container {
+    max-width: 850px;
+    margin: 28px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(44,62,80,0.08);
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.subtitle {
+    color: #718093;
+    font-size: 1.2em;
+}
+nav {
+    text-align: center;
+    margin-bottom: 15px;
+}
+nav button {
+    background: #f6e58d;
+    border: none;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+nav button:hover, nav button.active {
+    background: #f9ca24;
+}
+.section {
+    display: none;
+    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+}
+.section.active {
+    display: block;
+    animation: fadeIn 0.4s;
+}
+ul {
+    padding-left: 17px;
+}
+li {
+    margin: 7px 0;
+}
+h2 {
+    color: #4834d4;
+}
+
+/* Simple fade-in effect */
+@keyframes fadeIn {
+    0% { opacity:0; transform: translateY(30px);}
+    100% { opacity:1; transform: translateY(0);}
+}
